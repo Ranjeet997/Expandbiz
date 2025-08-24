@@ -1,0 +1,140 @@
+/* Backgrounds for each section */
+.gray-bg {
+  background-color: #6c757d; /* Bootstrap Gray */
+}
+
+.white-bg {
+  background-color: #ffffff;
+}
+
+.black-bg {
+  background-color: #000000;
+}
+
+.core-business-wrapper {
+  background-color: #c9971a; /* Gold as seen in image */
+}
+
+.core-pattern {
+  width: 100%;
+  opacity: 0.1;
+}
+
+.pattern-header {
+  position: relative;
+  padding-top: 2rem;
+}
+
+.heading-wrap {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: black;
+}
+
+.sub-heading {
+  color: white;
+}
+
+.dots-white-bg .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: white;
+}
+
+.domain-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.domain-subtitle {
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-top: 0.3rem;
+  color: #f5c518; /* Soft gold if on white, or white otherwise */
+}
+
+.domain-description {
+  font-size: 1rem;
+  margin-top: 1rem;
+  line-height: 1.6;
+}
+
+.white-bg .core-content {
+  color: #000; /* dark text for white background */
+}
+
+.black-bg .domain-subtitle {
+  color: #f5c518;
+}
+
+.white-bg .domain-subtitle {
+  color: #c9971a;
+}
+
+.timeline-wrapper {
+  position: relative;
+  background: #fff;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  right: 5%;
+  height: 2px;
+  background-color: #d4a736;
+  z-index: 1;
+}
+
+.timeline-event {
+  position: relative;
+  z-index: 2;
+}
+
+.timeline-dot {
+  width: 14px;
+  height: 14px;
+  background-color: #d4a736;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.timeline-logo {
+  max-height: 80px;
+  object-fit: contain;
+}
+
+.timeline-year {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.timeline-title {
+  font-size: 16px;
+  margin-top: 5px;
+}
+/* end strategic section css */
+.strategic-section {
+  background-color: #000; /* black background */
+  color: #fff;
+  padding: 80px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #f5c842; /* golden yellow */
+  margin-bottom: 30px;
+}
+
+.about-content p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #e6e6e6;
+}
+
+
+/* end strategic section css */
