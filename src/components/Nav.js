@@ -4,15 +4,16 @@ export default function Nav() {
   return (
     <>
       {/* ====== NAVBAR ====== */}
-      <nav className="navbar navbar-expand-lg py-4">
+      <nav className="navbar navbar-expand-lg py-3">
         <div className="container d-flex justify-content-between align-items-center">
           {/* Logo */}
-          <a className="navbar-brand" href="/">
+          <a className="navbar-brand text-center" href="/">
             <img
-              src="/images/expandbizglobal_logos.jpg"
+              src="/images/EXPANDBIZ_logo.png"
               alt="Strategic"
-              height="80"
+              height="45"
             />
+            <p className="logo_text text-light m-0" style={{fontSize:"10px"}}>EXPANDBIZ</p>
           </a>
 
           {/* Menu */}

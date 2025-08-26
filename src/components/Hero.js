@@ -7,7 +7,7 @@ export default function Hero() {
         {/* ====== HERO BANNER ====== */}
         <div className="home-banner-wrapper position-relative text-white d-flex align-items-center">
           {/* Background images */}
-          <img
+          {/* <img
             className="banner-bg-1"
             src="/images/background.png"
             alt="Strategic"
@@ -16,7 +16,7 @@ export default function Hero() {
             className="banner-bg-2"
             src="/images/background.png"
             alt="Strategic"
-          />
+          /> */}
 
           <div className="container">
             <div className="row">
@@ -62,7 +62,9 @@ export default function Hero() {
           background-color: #001b38;
         }
         .home-banner-wrapper {
-          background-color: #001b38;
+          width:100%;
+          background: url("/images/background_img.png") no-repeat center;
+          background-size: cover;
           overflow: hidden;
           height: 85vh;
         }
