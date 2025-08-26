@@ -7,13 +7,13 @@ export default function Nav() {
       <nav className="navbar navbar-expand-lg py-3">
         <div className="container d-flex justify-content-between align-items-center">
           {/* Logo */}
-          <a className="navbar-brand text-center" href="/">
+          <a className="navbar-brand d-flex align-items-center" href="/">
             <img
               src="/images/EXPANDBIZ_logo.png"
               alt="Strategic"
-              height="45"
+              height="35"
             />
-            <p className="logo_text text-light m-0" style={{fontSize:"10px"}}>EXPANDBIZ</p>
+            <p className="mx-2 logo_text text-light m-0" style={{}}>EXPANDBIZ</p>
           </a>
 
           {/* Menu */}

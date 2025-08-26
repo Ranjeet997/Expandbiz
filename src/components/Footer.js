@@ -22,13 +22,13 @@ const Footer = () => {
           <div className="container">
             <div className="row align-items-start">
               {/* Left Logo */}
-              <div className="col-12 col-md-4 mb-4 mb-md-0 text-center">
+              <div className="col-12 col-md-4 mb-4 mb-md-0 text-center d-flex align-items-center">
                 <img
                   src="/images/EXPANDBIZ_logo.png"
                   alt="Strategic Logo"
                   className="footer-logo img-fluid"
                 />
-                <p className="logo_text">EXPANDBIZ</p>
+                <p className="px-3 logo_text m-0">EXPANDBIZ</p>
               </div>
 
               {/* Middle Links */}
@@ -150,7 +150,7 @@ const Footer = () => {
           overflow: hidden;
         }
         .footer-logo {
-          max-width: 150px;
+          max-width: 50px;
         }
         .footer-link:hover {
           color: #f0c24b; /* gold hover effect */
@@ -174,7 +174,7 @@ const Footer = () => {
           z-index: 1;
         }
         .logo_text{
-          font-size: 25px;
+          font-size: 28px;
           font-family: "droid-serif", serif;
 font-weight: 400;
 font-style: normal;

@@ -6,6 +6,7 @@ export default function Hero() {
       <div>
         {/* ====== HERO BANNER ====== */}
         <div className="home-banner-wrapper position-relative text-white d-flex align-items-center">
+          
           {/* Background images */}
           {/* <img
             className="banner-bg-1"
