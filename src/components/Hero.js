@@ -1,12 +1,17 @@
 import React from "react";
+import Nav from "./Nav";
+import { hero_content } from "../all_data_obj/data_obj";
 
 export default function Hero() {
   return (
     <>
-      <div>
+      <div className="background_img position-relative w-100">
         {/* ====== HERO BANNER ====== */}
-        <div className="home-banner-wrapper position-relative text-white d-flex align-items-center">
-          
+        <Nav />
+        <div
+          className="home-banner-wrapper text-white d-flex align-items-center"
+          style={{ height: "75vh" }}
+        >
           {/* Background images */}
           {/* <img
             className="banner-bg-1"
@@ -21,13 +26,10 @@ export default function Hero() {
 
           <div className="container">
             <div className="row">
-              <div className="col-12 col-md-6">
-                <h2 className="banner-heading">
-                  Powering Your Next Business BreakThrough
-                </h2>
-                <h2 className="banner-subheading">
-                  B2B Events <span> | </span> Custmise Experiences{" "}
-                  <span> | </span> Event Management
+              <div className="col-12 col-md-6 text-center">
+                <h2 className="banner-heading">{hero_content[0].Heading}</h2>
+                <h2 className="banner-subheading mt-3 text-uppercase">
+                  {hero_content[0].sub_head}
                 </h2>
               </div>
             </div>
@@ -36,7 +38,7 @@ export default function Hero() {
           {/* Marquee Text */}
           <div className="marquee-container border-top border-bottom border-light">
             <div className="marquee">
-              <h2>TWENTY FIVE YEARS OF EXCELLENCE</h2>
+              <h2>{hero_content[0].bottom_slider}</h2>
             </div>
           </div>
         </div>
@@ -59,32 +61,29 @@ export default function Hero() {
         }
 
         /* BANNER */
-        .navbar {
-          background-color: #001b38;
-        }
-        .home-banner-wrapper {
-          width:100%;
+
+        .background_img {
           background: url("/images/background_img.png") no-repeat center;
           background-size: cover;
           overflow: hidden;
-          height: 85vh;
+          height: 100vh;
         }
-        .home-banner-wrapper .banner-bg-1 {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 50%;
-          opacity: 0.2;
-          transform: rotate(193deg);
-        }
-        .home-banner-wrapper .banner-bg-2 {
-          position: absolute;
-          top: -20px;
-          right: -40px;
-          width: 57%;
-          opacity: 0.2;
-          transform: rotate(-30deg);
-        }
+        // .home-banner-wrapper .banner-bg-1 {
+        //   position: absolute;
+        //   top: 0;
+        //   left: 0;
+        //   width: 50%;
+        //   opacity: 0.2;
+        //   transform: rotate(193deg);
+        // }
+        // .home-banner-wrapper .banner-bg-2 {
+        //   position: absolute;
+        //   top: -20px;
+        //   right: -40px;
+        //   width: 57%;
+        //   opacity: 0.2;
+        //   transform: rotate(-30deg);
+        // }
         .banner-heading {
           font-size: 2.8rem;
           font-weight: 500;

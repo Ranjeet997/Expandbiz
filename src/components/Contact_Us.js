@@ -1,9 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Contact_Us() {
+  const [formData, setFormData] = useState({
+    firstname: "",
+    lastname: "",
+    email: "",
+    phone: "",
+    country: "",
+    business: "",
+    message: "",
+  });
+
+  // Handle input change
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  // Handle form submit
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+
+  //   const phoneNumber = "917428776906";
+
+  //   const text = `New Contact Form Submission:
+  //   Name: ${formData.firstname} ${formData.lastname}
+  //   Email: ${formData.email}
+  //   Phone: ${formData.phone}
+  //   Country: ${formData.country}
+  //   Business Nature: ${formData.business}
+  //   Message: ${formData.message}`;
+
+  //   // Encode and open WhatsApp
+  //   const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
+  //   window.open(url, "_blank");
+  // };
+
   return (
     <>
-      <section className="contact-section" style={{background: '#f0f0f0'}}>
+      <section className="contact-section" style={{ background: "#f0f0f0" }}>
         <img className="contact-bg" src="/images/contact_wraper.jpg" />
 
         <div
@@ -25,12 +59,7 @@ export default function Contact_Us() {
                   Looking to organize an event? Get in touch with us.
                 </p>
 
-                <form
-                  method="POST"
-                  action="https://strategic31677.activehosted.com/proc.php"
-                  id="_form_257_"
-                  className="contact-form"
-                >
+                <form className="contact-form">
                   <div className="row">
                     <div className="form-group col-12 col-md-6 mb-4">
                       <input
@@ -39,6 +68,8 @@ export default function Contact_Us() {
                         name="firstname"
                         className="form-control custom-input"
                         placeholder="First Name"
+                        value={formData.firstname}
+                        onChange={handleChange}
                         required
                       />
                     </div>
@@ -50,6 +81,8 @@ export default function Contact_Us() {
                         name="lastname"
                         className="form-control custom-input"
                         placeholder="Last Name"
+                        value={formData.lastname}
+                        onChange={handleChange}
                         required
                       />
                     </div>
@@ -61,6 +94,8 @@ export default function Contact_Us() {
                         name="email"
                         className="form-control custom-input"
                         placeholder="Email Address"
+                        value={formData.email}
+                        onChange={handleChange}
                         required
                       />
                     </div>
@@ -72,16 +107,18 @@ export default function Contact_Us() {
                         name="phone"
                         className="form-control custom-input"
                         placeholder="Phone Number"
+                        value={formData.phone}
+                        onChange={handleChange}
                         required
                       />
                     </div>
 
                     <div className="form-group col-12 col-md-6 mb-4">
                       <select
-                        name="field[3]"
-                        id="field[3]"
+                        name="country"
                         className="form-select custom-input"
-                        style={{cursor: 'pointer'}}
+                        value={formData.country}
+                        onChange={handleChange}
                         required
                       >
                         <option value="">Country</option>
@@ -97,11 +134,11 @@ export default function Contact_Us() {
 
                     <div className="form-group col-12 col-md-6 mb-4">
                       <select
-                        name="field[4]"
-                        id="field[4]"
+                        name="business"
                         className="form-select custom-input"
+                        value={formData.business}
+                        onChange={handleChange}
                         required
-                        style={{cursor: 'pointer'}}
                       >
                         <option value="">Business Nature</option>
                         <option value="Consultancy">Consultancy</option>
@@ -115,23 +152,15 @@ export default function Contact_Us() {
                     <div className="form-group col-12 mb-4">
                       <textarea
                         className="form-control custom-input"
-                        id="field[6]"
-                        name="field[6]"
+                        name="message"
                         placeholder="Your Message"
                         rows="4"
+                        value={formData.message}
+                        onChange={handleChange}
                         required
                       ></textarea>
                     </div>
 
-                    {/* <!-- reCAPTCHA --> */}
-                    <div className="form-group col-12 mb-4">
-                      <div
-                        className="g-recaptcha"
-                        data-sitekey="6LcwIw8TAAAAACP1ysM08EhCgzd6q5JAOUR1a0Go"
-                      ></div>
-                    </div>
-
-                    {/* <!-- Submit Button --> */}
                     <div className="form-group col-12 text-center">
                       <button type="submit" className="send-btn">
                         SEND
@@ -173,15 +202,15 @@ export default function Contact_Us() {
           z-index: 1;
         }
         .custom-input {
-            border: none;
-            outline: none;
-            padding:11px;
-            border-radius: 10px;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          border: none;
+          outline: none;
+          padding: 11px;
+          border-radius: 10px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         }
         .contact-form .custom-input:focus {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
 
         /* Background pattern */
         .contact-section::after {

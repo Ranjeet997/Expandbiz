@@ -9,7 +9,7 @@ import Nav from './components/Nav';
 function App() {
   return (
     <div className="">
-      <Nav/>
+      {/* <Nav/> */}
       <Hero/>
       <About_Us/>
       <Home/>
