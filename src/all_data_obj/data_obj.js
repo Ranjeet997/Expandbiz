@@ -85,13 +85,8 @@ const hero_content = [
 const about_us = [
   {
     heading: "About us",
-    content: `Exito is a Spanish word for 'success'! We are a business solutions
-    company focused on crafting bespoke solutions and contexts by
-    designing platforms that create new business opportunities for our
-    clients across concepts and industries. We cherish the trust we have
-    garnered from our partnering organizations, and with a growing team
-    of young, vibrant, and creative individuals, Exito aims at success
-    and perfection!`,
+    content: `At Expandbiz, we specialize in powering business growth by creating platforms that connect the right people, ideas, and opportunities. Through bespoke conferences, flagship subject-focused events, and tailored business forums, we help brands engage with their target audience and unlock new partnerships. Our services span across marketing solutions—including social media management, webpage development, and digital branding—as well as end-to-end event execution support such as on-ground management, AV setup, booth design, and onsite branding. With a growing presence in India and the Middle East, our mission is to turn every event into a catalyst for connection, learning, and measurable growth. You bring the vision—we make it happen.
+`,
   },
 ];
 
@@ -115,10 +110,10 @@ const footer = [
     },
     social: {
       linkedin:
-        "https://www.linkedin.com/company/strategic-marketing-&-exhibitions",
+        "https://www.linkedin.com/company/expandbizglobal/",
       facebook:
-        "https://www.facebook.com/pages/category/Marketing-Agency/Strategic-Holding-111767823674647/",
-      twitter: "https://twitter.com/strategicholdi1",
+        "#",
+      twitter: "#",
     },
   },
 ];
