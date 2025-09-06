@@ -26,15 +26,10 @@ const businessDomains = [
     title: "Event Execution & On-Site Support",
     // subtitle: "Unlocking Opportunities",
     description: `We manage the complete on-site execution of your event, ensuring everything runs seamlessly from start to finish. Our team takes care of every detail, including:
-    
     Booth design and building
-    
     Stage setup and production
-    
     Audio-visual setup and technical support
-    
     On-ground coordination and vendor management
-    
     With our hands-on approach, you can stay focused on engaging with your audience while we ensure flawless delivery and smooth event flow.`,
     videoPosition: "right",
     bg: "black-bg",
@@ -52,6 +47,15 @@ const businessDomains = [
     videoPosition: "left",
     bg: "white-bg",
     text: "text-dark",
+    videoSrc:
+      "https://assets-us-01.kc-usercontent.com/cd358952-bd24-0080-a902-0fd831c563a1/b7979f36-dd53-4d76-9118-b727ac229215/aim2025landingbannervideo.mp4",
+  },
+   {
+    title: "Lead Generation & Sales Support",
+    // subtitle: "Unlocking Opportunities",
+    description: `At Expandbiz, we help businesses set up qualified demo calls with the right prospects so your sales team can focus on showcasing the product and closing deals. You can either provide us with your own database of potential prospects, or our team will conduct thorough research to identify and build a targeted list of companies and decision-makers. We then connect you directly with the right stakeholders and arrange one-on-one meetings, ensuring your sales efforts are directed toward prospects with genuine interest and purchase potential.`,
+    videoPosition: "right",
+    bg: "gray-bg",
     videoSrc:
       "https://assets-us-01.kc-usercontent.com/cd358952-bd24-0080-a902-0fd831c563a1/b7979f36-dd53-4d76-9118-b727ac229215/aim2025landingbannervideo.mp4",
   },
