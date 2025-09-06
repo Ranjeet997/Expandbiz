@@ -7,8 +7,9 @@ export default function About_Us() {
       {/* About Us */}
       <div className="aboutus container my-5" id="aboutus">
         <div className="feature1 h-100 p-4 border rounded shadow-sm">
-          <h2>{about_us[0].heading}</h2>
-          <p>{about_us[0].content}</p>
+          <h2 className="mb-4" style={{fontFamily: "Poppins"}}>{about_us[0].heading}</h2>
+          {/* <p>{about_us[0].content}</p> */}
+          <p dangerouslySetInnerHTML={{ __html: about_us[0].content }}  style={{fontFamily: "Poppins"}}/>
         </div>
       </div>
     </>

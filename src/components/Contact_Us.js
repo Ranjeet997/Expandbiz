@@ -37,7 +37,7 @@ export default function Contact_Us() {
 
   return (
     <>
-      <section className="contact-section" style={{ background: "#f0f0f0" }}>
+      <section id="contact_us" className="contact-section" style={{ background: "#f0f0f0" }}>
         <img className="contact-bg" src="/images/contact_wraper.jpg" />
 
         <div
@@ -59,7 +59,7 @@ export default function Contact_Us() {
                   Looking to organize an event? Get in touch with us.
                 </p>
 
-                <form className="contact-form">
+                <form className="contact-form"  style={{fontFamily: "Poppins"}}>
                   <div className="row">
                     <div className="form-group col-12 col-md-6 mb-4">
                       <input
@@ -227,6 +227,7 @@ export default function Contact_Us() {
           pointer-events: none;
         }
         .subheading {
+          font-family: "Poppins";
           font-size: 1.5rem;
           font-weight: 500;
           margin-bottom: 30px;

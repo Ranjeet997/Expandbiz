@@ -4,7 +4,7 @@ export default function Nav() {
   return (
     <>
       {/* ====== NAVBAR ====== */}
-      <nav className="navbar navbar-expand-lg py-3 bg-transparent">
+      <nav className="navbar navbar-expand-lg py-3 bg-transparent"  style={{fontFamily: "Poppins"}}>
         <div className="container d-flex justify-content-between align-items-center">
           {/* Logo */}
           <a className="navbar-brand d-flex align-items-center" href="/">
@@ -32,15 +32,15 @@ export default function Nav() {
           >
             <ul className="navbar-nav align-items-center">
               <li className="nav-item">
-                <a className="nav-link" href="/">
+                <a className="nav-link" href="#">
                   HOME
                 </a>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <a className="nav-link" href="/">
                   About Us
                 </a>
-              </li>
+              </li> */}
               {/* <!-- EVENTS Dropdown --> */}
               <li class="nav-item dropdown">
                 <a
@@ -57,7 +57,7 @@ export default function Nav() {
                       class="dropdown-item"
                       href="https://www.exito-e.com/flagship-events/"
                     >
-                      Flagship Events
+                      India
                     </a>
                   </li>
                   <li>
@@ -65,10 +65,10 @@ export default function Nav() {
                       class="dropdown-item"
                       href="https://www.exito-e.com/customized-events/"
                     >
-                      Customized Events
+                     Middle East
                     </a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a
                       class="dropdown-item"
                       href="https://www.exito-e.com/lead-generation/"
@@ -83,14 +83,8 @@ export default function Nav() {
                     >
                       Tele-Services
                     </a>
-                  </li>
+                  </li> */}
                 </ul>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  ABOUT US
-                </a>
               </li>
 
               {/* <!-- SERVICES Dropdown --> */}
@@ -107,23 +101,33 @@ export default function Nav() {
                 <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
                   <li>
                     <a class="dropdown-item" href="#">
-                      Consulting
+                    Conferences
                     </a>
                   </li>
                   <li>
                     <a class="dropdown-item" href="#">
-                      Digital Solutions
+                     Customized Events
                     </a>
                   </li>
                   <li>
                     <a class="dropdown-item" href="#">
-                      Marketing
+                     Event Execution & On-Site Support
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                    Marketing
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                    Lead Generation
                     </a>
                   </li>
                 </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="#contact_us">
                   CONTACT US
                 </a>
               </li>
@@ -131,7 +135,6 @@ export default function Nav() {
           </div>
         </div>
       </nav>
-
     </>
   );
 }

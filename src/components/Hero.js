@@ -32,15 +32,18 @@ export default function Hero() {
                   {hero_content[0].sub_head}
                 </h2>
               </div>
+              {/* <div className="col-md-6 col-12 text-center">
+                <img src="/images/global_event.png" alt="" />
+              </div> */}
             </div>
           </div>
 
           {/* Marquee Text */}
-          <div className="marquee-container border-top border-bottom border-light">
+          {/* <div className="marquee-container border-top border-bottom border-light">
             <div className="marquee">
               <h2>{hero_content[0].bottom_slider}</h2>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -85,12 +88,14 @@ export default function Hero() {
         //   transform: rotate(-30deg);
         // }
         .banner-heading {
-          font-size: 2.8rem;
-          font-weight: 500;
+          font-family: "Poppins";
+          font-size: 3.4rem;
+          font-weight: 100;
           z-index: 2;
           position: relative;
         }
         .banner-subheading {
+          font-family: "Poppins";
           font-size: 1.2rem;
           color: #ffcc00;
           margin-top: 10px;

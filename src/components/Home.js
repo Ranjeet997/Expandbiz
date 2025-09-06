@@ -6,7 +6,7 @@ import { businessDomains, the_Strategic_obj } from "../all_data_obj/data_obj";
 export default function () {
   return (
     <>
-      <TimelineCarousel />
+      {/* <TimelineCarousel /> */}
       <div className="core-business-wrapper pb-5">
         <div className="pattern-header">
           <img
@@ -37,7 +37,7 @@ export default function () {
                     <div className="core-video">
                       <video
                         width="100%"
-                        style={{ height: "200px", objectFit: "cover" }}
+                        style={{ height: "35vh", objectFit: "cover" }}
                         autoPlay
                         loop
                         muted
@@ -52,10 +52,12 @@ export default function () {
                 )}
 
                 <div className="col-md-6">
-                  <div className="core-content text-white">
-                    <h2 className="domain-title">{domain.title}</h2>
-                    <p className="domain-subtitle">{domain.subtitle}</p>
-                    <p className="domain-description">{domain.description}</p>
+                  <div className={`core-content ${domain?.text || "text-white"}`}>
+                    <h2 className="domain-title h3 fw-semibold" style={{fontFamily: "Poppins"}}>{domain.title}</h2>
+                    {/* <p className="domain-subtitle">{domain.subtitle}</p> */}
+                    <p className="domain-description"  style={{fontFamily: "Poppins"}}>{ domain.description }
+                    </p>
+                    {/* <p dangerouslySetInnerHTML={{ __html: domain.description }} /> */}
                   </div>
                 </div>
 
@@ -65,7 +67,7 @@ export default function () {
                     <div className="core-video">
                       <video
                         width="100%"
-                        style={{ height: "200px", objectFit: "cover" }}
+                        style={{ height: "35vh", objectFit: "cover" }}
                         autoPlay
                         loop
                         muted
@@ -84,7 +86,7 @@ export default function () {
         ))}
       </div>
 
-      <section className="strategic-section">
+      {/* <section className="strategic-section">
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -99,7 +101,7 @@ export default function () {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Custome CSS */}
       <style jsx>{`

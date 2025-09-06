@@ -8,26 +8,35 @@ const Footer = () => {
     <footer className="footer-section position-relative text-white">
       {/* Background Images */}
       <img src="/images/background.png" alt="bg-left" className="footer-bg-1" />
-      <img src="/images/background.png" alt="bg-right" className="footer-bg-2" />
+      <img
+        src="/images/background.png"
+        alt="bg-right"
+        className="footer-bg-2"
+      />
 
       <section className="position-relative py-5">
         <div className="container">
           <div className="row align-items-start">
             {/* Left Logo */}
-            <div className="col-12 col-md-4 mb-4 mb-md-0 text-center d-flex align-items-center">
-              <img
-                src="/images/EXPANDBIZ_logo.png"
-                alt="Strategic Logo"
-                className="footer-logo img-fluid"
-              />
-              <p className="px-3 logo_text m-0">EXPANDBIZ</p>
+            <div className="col-12 col-md-4 mb-4 mb-md-0">
+              <div className="d-flex align-items-center justify-content-center">
+                <img
+                  src="/images/EXPANDBIZ_logo.png"
+                  alt="Strategic Logo"
+                  className="footer-logo img-fluid"
+                />
+                <p className="px-3 logo_text m-0">EXPANDBIZ</p>
+              </div>
+              <p className="m-0 text-center" style={{fontSize: '13px',fontFamily: "Poppins",fontWeight:200}}>Powering Your Next Business BreakThrough</p>
+              <p className="m-0 text-center" style={{fontSize: '9px',fontFamily: "Poppins",fontWeight:400}}>
+                B2B Events | Customised Experiences | Strategic partnerships
+              </p>
             </div>
-
             {/* Middle Links */}
             <div className="col-12 col-md-4 mb-4 mb-md-0">
               <div className="row">
                 {/* Quick Links */}
-                <div className="col-6 text-center">
+                {/* <div className="col-6 text-center">
                   <p className="fw-bold text-uppercase">{data.heading_1}</p>
                   <ul className="list-unstyled">
                     {data.content_1.map((item, idx) => (
@@ -41,10 +50,10 @@ const Footer = () => {
                       </li>
                     ))}
                   </ul>
-                </div>
+                </div> */}
 
                 {/* Events */}
-                <div className="col-6 text-center">
+                <div className="col-6 text-center"  style={{fontFamily: "Poppins"}}>
                   <p className="fw-bold text-uppercase">{data.heading_2}</p>
                   <ul className="list-unstyled">
                     {data.content_2.map((item, idx) => (
@@ -63,7 +72,7 @@ const Footer = () => {
             </div>
 
             {/* Right Contact */}
-            <div className="col-12 col-md-4 text-center text-md-start">
+            <div className="col-12 col-md-4 text-center text-md-start"  style={{fontFamily: "Poppins"}}>
               <div className="mb-3">
                 <a
                   href={`tel:${data.contact.phone}`}

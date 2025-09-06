@@ -1,31 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* Backgrounds for each section */
 .gray-bg {
   background-color: #6c757d; /* Bootstrap Gray */
 }
-
 .white-bg {
   background-color: #ffffff;
 }
-
 .black-bg {
   background-color: #000000;
 }
-
 .core-business-wrapper {
   background-color: #c9971a; /* Gold as seen in image */
 }
-
 .core-pattern {
   width: 100%;
   opacity: 0.1;
 }
-
 .pattern-header {
   position: relative;
   padding-top: 2rem;
 }
 
 .heading-wrap {
+  font-family: "Poppins";
   font-size: 2.5rem;
   font-weight: 700;
   color: black;
@@ -42,22 +39,11 @@
   background: white;
 }
 
-.domain-title {
-  font-size: 1.8rem;
-  font-weight: 700;
-}
-
 .domain-subtitle {
   font-style: italic;
   font-size: 1.2rem;
   margin-top: 0.3rem;
   color: #f5c518; /* Soft gold if on white, or white otherwise */
-}
-
-.domain-description {
-  font-size: 1rem;
-  margin-top: 1rem;
-  line-height: 1.6;
 }
 
 .white-bg .core-content {
@@ -135,6 +121,5 @@
   line-height: 1.8;
   color: #e6e6e6;
 }
-
 
 /* end strategic section css */
