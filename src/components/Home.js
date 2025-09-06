@@ -55,7 +55,7 @@ export default function () {
                   <div className={`core-content ${domain?.text || "text-white"}`}>
                     <h2 className="domain-title h3 fw-semibold" style={{fontFamily: "Poppins"}}>{domain.title}</h2>
                     {/* <p className="domain-subtitle">{domain.subtitle}</p> */}
-                    <p className="domain-description"  style={{fontFamily: "Poppins"}}>{ domain.description }
+                    <p className="domain-description"  style={{fontFamily: "Poppins", fontWeight: 400}}>{ domain.description }
                     </p>
                     {/* <p dangerouslySetInnerHTML={{ __html: domain.description }} /> */}
                   </div>
