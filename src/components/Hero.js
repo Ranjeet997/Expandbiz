@@ -56,9 +56,9 @@ export default function Hero() {
                 </div>
               </div>
             </div>
-            <div className="col-md-6 col-12 align-self-end">
+            <div className="col-md-1 col-0 d-none d-md-block align-self-end">
               <img
-                src="/images/right_hero_1.png"
+                src="/images/global_png.png"
                 alt=""
                 style={{ width: "100%" }}
               />
@@ -66,11 +66,11 @@ export default function Hero() {
           </div>
 
           {/* Marquee Text */}
-          {/* <div className="marquee-container border-top border-bottom border-light">
+          <div className="marquee-container border-top border-bottom border-light">
             <div className="marquee">
               <h2>{hero_content[0].bottom_slider}</h2>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
 
