@@ -32,7 +32,7 @@ export default function Nav() {
           >
             <ul className="navbar-nav align-items-center">
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="#home">
                   HOME
                 </a>
               </li>
@@ -55,7 +55,7 @@ export default function Nav() {
                   <li>
                     <a
                       class="dropdown-item"
-                      href="https://www.exito-e.com/flagship-events/"
+                      href="#"
                     >
                       India
                     </a>
@@ -63,7 +63,7 @@ export default function Nav() {
                   <li>
                     <a
                       class="dropdown-item"
-                      href="https://www.exito-e.com/customized-events/"
+                      href="#"
                     >
                      Middle East
                     </a>
@@ -91,7 +91,7 @@ export default function Nav() {
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
-                  href="#"
+                  href="#services"
                   id="servicesDropdown"
                   role="button"
                   aria-expanded="false"
@@ -100,27 +100,27 @@ export default function Nav() {
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
                   <li>
-                    <a class="dropdown-item" href="#">
+                    <a class="dropdown-item" href="#busines_domain_0">
                     Conferences
                     </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">
+                    <a class="dropdown-item" href="#busines_domain_1">
                      Customized Events
                     </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">
+                    <a class="dropdown-item" href="#busines_domain_2">
                      Event Execution & On-Site Support
                     </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">
+                    <a class="dropdown-item" href="#busines_domain_3">
                     Marketing
                     </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">
+                    <a class="dropdown-item" href="#busines_domain_4">
                     Lead Generation
                     </a>
                   </li>

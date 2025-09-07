@@ -16,20 +16,10 @@
   width: 100%;
   opacity: 0.1;
 }
+
 .pattern-header {
   position: relative;
   padding-top: 2rem;
-}
-
-.heading-wrap {
-  font-family: "Poppins";
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: black;
-}
-
-.sub-heading {
-  color: white;
 }
 
 .dots-white-bg .dot {

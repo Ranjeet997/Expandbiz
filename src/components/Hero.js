@@ -8,10 +8,7 @@ export default function Hero() {
       <div className="background_img position-relative w-100">
         {/* ====== HERO BANNER ====== */}
         <Nav />
-        <div
-          className="home-banner-wrapper text-white d-flex align-items-center"
-          style={{ height: "75vh" }}
-        >
+        <div id="home" className="home-banner-wrapper container">
           {/* Background images */}
           {/* <img
             className="banner-bg-1"
@@ -23,18 +20,48 @@ export default function Hero() {
             src="/images/background.png"
             alt="Strategic"
           /> */}
+          <div
+            className="row text-white d-flex text-center"
+            style={{ height: "100%" }}
+          >
+            <div className="col-12 col-md-6 align-self-end">
+              <h2 className="banner-heading">{hero_content[0].Heading}</h2>
+              {/* <h2 className="banner-subheading mt-3 text-uppercase">
+                  <span style={{width: "10vw"}}>{hero_content[0].sub_head_1}</span>
+                  <span style={{width: "10vw"}}>{hero_content[0].sub_head_2}</span>
+                  <span style={{width: "10vw"}}>{hero_content[0].sub_head_3}</span>
+                </h2> */}
+              {/* <div className="bg-dark py-3"> */}
+              <div className="container text-center">
+                <div className="d-flex justify-content-center align-items-center text-uppercase fs-6 fw-bold" style={{fontFamily: 'Poppins', color: 'rgb(248 212 104)'}}>
+                  {/* First Item */}
+                  <span className="px-3">B2B Events</span>
 
-          <div className="container">
-            <div className="row">
-              <div className="col-12 col-md-6 text-center">
-                <h2 className="banner-heading">{hero_content[0].Heading}</h2>
-                <h2 className="banner-subheading mt-3 text-uppercase">
-                  {hero_content[0].sub_head}
-                </h2>
+                  <span
+                    className="border-start border-white mx-2"
+                    style={{ height: "35px" }}
+                  ></span>
+
+                  <span className="px-3">
+                    Customised <br /> Experiences
+                  </span>
+                  <span
+                    className="border-start border-white mx-2"
+                    style={{ height: "35px" }}
+                  ></span>
+
+                  <span className="px-3">
+                    Strategic <br /> Partnerships
+                  </span>
+                </div>
               </div>
-              {/* <div className="col-md-6 col-12 text-center">
-                <img src="/images/global_event.png" alt="" />
-              </div> */}
+            </div>
+            <div className="col-md-6 col-12 align-self-end">
+              <img
+                src="/images/right_hero_1.png"
+                alt=""
+                style={{ width: "100%" }}
+              />
             </div>
           </div>
 

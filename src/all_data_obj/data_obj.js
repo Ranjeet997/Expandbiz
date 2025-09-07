@@ -97,7 +97,9 @@ const the_Strategic_obj = [
 const hero_content = [
   {
     Heading: "Powering Your Next Business BreakThrough",
-    sub_head: "B2B Events |  Customised Experiences | Strategic partnerships",
+    sub_head_1: "B2B Events",
+    sub_head_2: "| Customised Experiences ",
+    sub_head_3: "| Strategic partnerships",
     bottom_slider: "TWENTY FIVE YEARS OF EXCELLENCE",
   },
 ];
@@ -132,12 +134,12 @@ const footer = [
     ],
     heading_2: "Events",
     content_2: [
-      { text: "India", link: "/india" },
-      { text: "Middle East", link: "/middle-east" },
+      { text: "India", link: "#" },
+      { text: "Middle East", link: "#" },
     ],
     contact: {
-      phone: "+971 4 328 2000",
-      email: "info@strategic.ae",
+      phone: "+91 95187 87195",
+      email: "Info@expandbizglobal.com",
     },
     social: {
       linkedin: "https://www.linkedin.com/company/expandbizglobal/",

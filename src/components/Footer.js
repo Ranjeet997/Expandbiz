@@ -27,8 +27,8 @@ const Footer = () => {
                 />
                 <p className="px-3 logo_text m-0">EXPANDBIZ</p>
               </div>
-              <p className="m-1 text-center " style={{fontSize: '13px',fontFamily: "Poppins",fontWeight:200}}>Powering Your Next Business BreakThrough</p>
-              <p className="m-0 text-center" style={{fontSize: '12px',fontFamily: "Poppins",fontWeight:400, color: '#ffcc00'}}>
+              <p className="m-0 mt-1 text-center " style={{fontSize: '12px',fontFamily: "Poppins",fontWeight:200}}>Powering Your Next Business BreakThrough</p>
+              <p className="m-0 text-center" style={{fontSize: '9px',fontFamily: "Poppins",fontWeight:400, color: '#ffcc00'}}>
                 B2B Events | Customised Experiences | Strategic partnerships
               </p>
             </div>
@@ -54,7 +54,7 @@ const Footer = () => {
 
                 {/* Events */}
                 <div className="col-6 text-center"  style={{fontFamily: "Poppins"}}>
-                  <p className="fw-bold text-uppercase">{data.heading_2}</p>
+                  <p className="fw-medium text-uppercase">{data.heading_2}</p>
                   <ul className="list-unstyled" style={{fontFamily: "Poppins", fontSize: '13px', fontWeight:350}}>
                     {data.content_2.map((item, idx) => (
                       <li key={idx} className="mb-2">
