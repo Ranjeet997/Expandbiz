@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="background_img position-relative w-100">
         {/* ====== HERO BANNER ====== */}
         <Nav />
-        <div id="home" className="home-banner-wrapper container">
+        <div id="home" className="home-banner-wrapper">
           {/* Background images */}
           {/* <img
             className="banner-bg-1"
@@ -20,11 +20,12 @@ export default function Hero() {
             src="/images/background.png"
             alt="Strategic"
           /> */}
+          <div className="container">
           <div
-            className="row text-white d-flex text-center"
+            className="row text-white d-flex align-items-center text-center"
             style={{ height: "100%" }}
           >
-            <div className="col-12 col-md-6 align-self-end">
+            <div className="col-12 col-md-6">
               <h2 className="banner-heading">{hero_content[0].Heading}</h2>
               {/* <h2 className="banner-subheading mt-3 text-uppercase">
                   <span style={{width: "10vw"}}>{hero_content[0].sub_head_1}</span>
@@ -56,19 +57,19 @@ export default function Hero() {
                 </div>
               </div>
             </div>
-            <div className="col-md-1 col-0 d-none d-md-block align-self-end">
+            <div className="col-md-6 col-12">
               <img
-                src="/images/global_png.png"
+                src="/images/globe_png.png"
                 alt=""
-                style={{ width: "100%" }}
+                style={{ width: "100%", opacity: "0.5"}}
               />
             </div>
-          </div>
+          </div></div>
 
           {/* Marquee Text */}
           <div className="marquee-container border-top border-bottom border-light">
             <div className="marquee">
-              <h2>{hero_content[0].bottom_slider}</h2>
+              <h2 className="fs-2 fw-semibold" style={{fontFamily:'Roboto'}}>{hero_content[0].bottom_slider}</h2>
             </div>
           </div>
         </div>
@@ -117,7 +118,7 @@ export default function Hero() {
         .banner-heading {
           font-family: "Poppins";
           font-size: 3.4rem;
-          font-weight: 100;
+          font-weight: 300;
           z-index: 2;
           position: relative;
         }
@@ -147,10 +148,6 @@ export default function Hero() {
           display: inline-block;
           white-space: nowrap;
           animation: marquee 15s linear infinite;
-        }
-        .marquee h2 {
-          font-size: 2rem;
-          font-weight: 700;
         }
         @keyframes marquee {
           from {

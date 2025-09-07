@@ -38,7 +38,7 @@ export default function Contact_Us() {
   return (
     <>
       <section id="contact_us" className="contact-section" style={{ background: "#f0f0f0" }}>
-        <img className="contact-bg" src="/images/about_us_img.webp" />
+        {/* <img className="contact-bg" src="/images/about_us_img.webp" /> */}
 
         <div
           className="contact-main-div position-relative overflow-hidden"

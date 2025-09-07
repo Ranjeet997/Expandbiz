@@ -27,7 +27,7 @@ const Footer = () => {
                 />
                 <p className="px-3 logo_text m-0">EXPANDBIZ</p>
               </div>
-              <p className="m-0 mt-1 text-center " style={{fontSize: '12px',fontFamily: "Poppins",fontWeight:200}}>Powering Your Next Business BreakThrough</p>
+              <p className="m-0 mt-1 text-center " style={{fontSize: '12px',fontFamily: "Poppins",fontWeight:300}}>Powering Your Next Business BreakThrough</p>
               <p className="m-0 text-center" style={{fontSize: '9px',fontFamily: "Poppins",fontWeight:400, color: '#ffcc00'}}>
                 B2B Events | Customised Experiences | Strategic partnerships
               </p>
