@@ -100,7 +100,7 @@ const hero_content = [
     sub_head_1: "B2B Events",
     sub_head_2: "| Customised Experiences ",
     sub_head_3: "| Strategic partnerships",
-    bottom_slider: "TWENTY FIVE YEARS OF EXCELLENCE",
+    bottom_slider: "Shaping the Future of B2B Experiences",
   },
 ];
 
