@@ -36,7 +36,7 @@ const Footer = () => {
             <div className="col-12 col-md-4 mb-4 mb-md-0">
               <div className="row">
                 {/* Quick Links */}
-                {/* <div className="col-6 text-center">
+                {/* <div className="col-12 col-md-6 text-center">
                   <p className="fw-bold text-uppercase">{data.heading_1}</p>
                   <ul className="list-unstyled">
                     {data.content_1.map((item, idx) => (
@@ -53,7 +53,7 @@ const Footer = () => {
                 </div> */}
 
                 {/* Events */}
-                <div className="col-6 text-center"  style={{fontFamily: "Poppins"}}>
+                <div className="col-12 col-md-6 text-center"  style={{fontFamily: "Poppins"}}>
                   <p className="fw-medium text-uppercase">{data.heading_2}</p>
                   <ul className="list-unstyled" style={{fontFamily: "Poppins", fontSize: '13px', fontWeight:350}}>
                     {data.content_2.map((item, idx) => (

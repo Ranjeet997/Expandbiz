@@ -1,19 +1,36 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 
 export default function Contact_Us() {
-  const [formData, setFormData] = useState({
-    firstname: "",
-    lastname: "",
-    email: "",
-    phone: "",
-    country: "",
-    business: "",
-    message: "",
-  });
+  // const [formData, setFormData] = useState({
+  //   firstname: "",
+  //   lastname: "",
+  //   email: "",
+  //   phone: "",
+  //   country: "",
+  //   business: "",
+  //   message: "",
+  // });
 
   // Handle input change
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+  // const handleChange = (e) => {
+  //   setFormData({ ...formData, [e.target.name]: e.target.value });
+  // };
+
+  const formRef = useRef(null);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch("https://excel.cloud.microsoft/open/onedrive/?docId=7B106AF4E4B5109%21s1ce3710aed6b4a858d4cced206a91680&driveId=07B106AF4E4B5109", {
+        method: "POST",
+        body: new FormData(formRef.current),
+      });
+      const data = await response.json();
+      console.log(data);
+      alert(data.msg || "Form submitted successfully!");
+    } catch (error) {
+      console.error("Submission error:", error);
+      alert("Something went wrong. Please try again.");
+    }
   };
 
   // Handle form submit
@@ -37,7 +54,11 @@ export default function Contact_Us() {
 
   return (
     <>
-      <section id="contact_us" className="contact-section" style={{ background: "#f0f0f0" }}>
+      <section
+        id="contact_us"
+        className="contact-section"
+        style={{ background: "#f0f0f0" }}
+      >
         {/* <img className="contact-bg" src="/images/about_us_img.webp" /> */}
 
         <div
@@ -59,7 +80,12 @@ export default function Contact_Us() {
                   Looking to organize an event? Get in touch with us.
                 </p>
 
-                <form className="contact-form"  style={{fontFamily: "Poppins"}}>
+                <form
+                  className="contact-form"
+                  ref={formRef}
+                  onSubmit={handleSubmit}
+                  style={{ fontFamily: "Poppins" }}
+                >
                   <div className="row">
                     <div className="form-group col-12 col-md-6 mb-4">
                       <input
@@ -68,8 +94,8 @@ export default function Contact_Us() {
                         name="firstname"
                         className="form-control custom-input"
                         placeholder="First Name"
-                        value={formData.firstname}
-                        onChange={handleChange}
+                        // value={formData.firstname}
+                        // onChange={handleChange}
                         required
                       />
                     </div>
@@ -81,8 +107,8 @@ export default function Contact_Us() {
                         name="lastname"
                         className="form-control custom-input"
                         placeholder="Last Name"
-                        value={formData.lastname}
-                        onChange={handleChange}
+                        // value={formData.lastname}
+                        // onChange={handleChange}
                         required
                       />
                     </div>
@@ -94,8 +120,8 @@ export default function Contact_Us() {
                         name="email"
                         className="form-control custom-input"
                         placeholder="Email Address"
-                        value={formData.email}
-                        onChange={handleChange}
+                        // value={formData.email}
+                        // onChange={handleChange}
                         required
                       />
                     </div>
@@ -107,8 +133,8 @@ export default function Contact_Us() {
                         name="phone"
                         className="form-control custom-input"
                         placeholder="Phone Number"
-                        value={formData.phone}
-                        onChange={handleChange}
+                        // value={formData.phone}
+                        // onChange={handleChange}
                         required
                       />
                     </div>
@@ -117,8 +143,8 @@ export default function Contact_Us() {
                       <select
                         name="country"
                         className="form-select custom-input"
-                        value={formData.country}
-                        onChange={handleChange}
+                        // value={formData.country}
+                        // onChange={handleChange}
                         required
                       >
                         <option value="">Country</option>
@@ -136,8 +162,8 @@ export default function Contact_Us() {
                       <select
                         name="business"
                         className="form-select custom-input"
-                        value={formData.business}
-                        onChange={handleChange}
+                        // value={formData.business}
+                        // onChange={handleChange}
                         required
                       >
                         <option value="">Business Nature</option>
@@ -155,8 +181,8 @@ export default function Contact_Us() {
                         name="message"
                         placeholder="Your Message"
                         rows="4"
-                        value={formData.message}
-                        onChange={handleChange}
+                        // value={formData.message}
+                        // onChange={handleChange}
                         required
                       ></textarea>
                     </div>

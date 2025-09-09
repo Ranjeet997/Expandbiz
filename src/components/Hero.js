@@ -26,7 +26,7 @@ export default function Hero() {
             style={{ height: "100%" }}
           >
             <div className="col-12 col-md-6">
-              <h2 className="banner-heading">{hero_content[0].Heading}</h2>
+              <h2 className="banner-heading fw-lighter">{hero_content[0].Heading}</h2>
               {/* <h2 className="banner-subheading mt-3 text-uppercase">
                   <span style={{width: "10vw"}}>{hero_content[0].sub_head_1}</span>
                   <span style={{width: "10vw"}}>{hero_content[0].sub_head_2}</span>
@@ -34,7 +34,7 @@ export default function Hero() {
                 </h2> */}
               {/* <div className="bg-dark py-3"> */}
               <div className="container text-center">
-                <div className="d-flex justify-content-center align-items-center text-uppercase fs-6 fw-bold" style={{fontFamily: 'Poppins', color: 'rgb(248 212 104)'}}>
+                <div className="d-flex justify-content-center align-items-center text-uppercase fs-6 fw-bold sub_heading" style={{fontFamily: 'Poppins', color: 'rgb(248 212 104)'}}>
                   {/* First Item */}
                   <span className="px-3">B2B Events</span>
 
@@ -119,8 +119,21 @@ export default function Hero() {
           font-family: "Poppins";
           font-size: 3.4rem;
           font-weight: 300;
-          z-index: 2;
-          position: relative;
+        }
+        @media only screen and (min-width:768px){
+          .banner-heading {
+            font-weight: 300 !important;
+          }
+        }
+        @media only screen and (max-width:767px){
+          .banner-heading {
+            font-size: 2.5rem;
+          }
+        }
+        @media only screen and (max-width:415px){
+          .sub_heading {
+            font-size: .75rem !important;
+          }
         }
         .banner-subheading {
           font-family: "Poppins";
