@@ -28,14 +28,18 @@ export default function () {
         </div>
 
         {businessDomains.map((domain, index) => (
-          <div className="section my-4" key={index} id={`busines_domain_${index}`}>
+          <div
+            className="section my-4"
+            key={index}
+            id={`busines_domain_${index}`}
+          >
             <div className={`container ${domain.bg}`}>
               <div className="row align-items-center">
                 {/* Video or Image First (Alternating layout) */}
                 {domain.videoPosition === "left" && (
-                  <div className="col-md-6 p-0">
+                  <div className="col-lg-6 p-0">
                     <div className="core-video">
-                      <video
+                      {/* <video
                         width="100%"
                         style={{ height: "38vh", objectFit: "cover" }}
                         autoPlay
@@ -46,15 +50,32 @@ export default function () {
                         className="d-block"
                       >
                         <source src={domain.videoSrc} type="video/mp4" />
-                      </video>
+                      </video> */}
+                      <img
+                        src={`services_img/${domain.imgSrc}`}
+                        alt=""
+                        width="100%"
+                        style={{ height: "40vh", objectFit: "cover" }}
+                      />
                     </div>
                   </div>
                 )}
-                <div className="col-md-6">
-                  <div className={`core-content ${domain?.text || "text-white"}`}>
-                    <h2 className="domain-title h3 fw-medium mt-3" style={{fontFamily: "Poppins"}}>{domain.title}</h2>
+                <div className="col-lg-6">
+                  <div
+                    className={`core-content ${domain?.text || "text-white"}`}
+                  >
+                    <h2
+                      className="domain-title h3 fw-medium mt-3"
+                      style={{ fontFamily: "Poppins" }}
+                    >
+                      {domain.title}
+                    </h2>
                     {/* <p className="domain-subtitle">{domain.subtitle}</p> */}
-                    <p className="domain-description"  style={{fontFamily: "Poppins", fontWeight: 400}}>{ domain.description }
+                    <p
+                      className="domain-description"
+                      style={{ fontFamily: "Poppins", fontWeight: 400 }}
+                    >
+                      {domain.description}
                     </p>
                     {/* <p dangerouslySetInnerHTML={{ __html: domain.description }} /> */}
                   </div>
@@ -62,9 +83,9 @@ export default function () {
 
                 {/* Video on Right Side */}
                 {domain.videoPosition === "right" && (
-                  <div className="col-md-6 p-0">
+                  <div className="col-lg-6 p-0">
                     <div className="core-video">
-                      <video
+                      {/* <video
                         width="100%"
                         style={{ height: "38vh", objectFit: "cover" }}
                         autoPlay
@@ -75,7 +96,13 @@ export default function () {
                         className="d-block"
                       >
                         <source src={domain.videoSrc} type="video/mp4" />
-                      </video>
+                      </video> */}
+                      <img
+                        src={`services_img/${domain.imgSrc}`}
+                        alt=""
+                        width="100%"
+                        style={{ height: "40vh", objectFit: "cover" }}
+                      />
                     </div>
                   </div>
                 )}

@@ -9,6 +9,7 @@ const businessDomains = [
     drive results.`,
     videoPosition: "right",
     bg: "gray-bg",
+    imgSrc: "business_services_1.jpg",
     videoSrc:
       "https://assets-us-01.kc-usercontent.com/cd358952-bd24-0080-a902-0fd831c563a1/b7979f36-dd53-4d76-9118-b727ac229215/aim2025landingbannervideo.mp4",
   },
@@ -19,6 +20,7 @@ const businessDomains = [
     videoPosition: "left",
     bg: "white-bg",
     text: "text-dark",
+    imgSrc: "business_services_2.jpg",
     videoSrc:
       "https://assets-us-01.kc-usercontent.com/cd358952-bd24-0080-a902-0fd831c563a1/b7979f36-dd53-4d76-9118-b727ac229215/aim2025landingbannervideo.mp4",
   },
@@ -33,6 +35,7 @@ const businessDomains = [
     With our hands-on approach, you can stay focused on engaging with your audience while we ensure flawless delivery and smooth event flow.`,
     videoPosition: "right",
     bg: "black-bg",
+    imgSrc: "business_services_3.jpg",
     videoSrc:
       "https://assets-us-01.kc-usercontent.com/cd358952-bd24-0080-a902-0fd831c563a1/b7979f36-dd53-4d76-9118-b727ac229215/aim2025landingbannervideo.mp4",
   },
@@ -47,6 +50,7 @@ const businessDomains = [
     videoPosition: "left",
     bg: "white-bg",
     text: "text-dark",
+    imgSrc: "business_services_4.jpg",
     videoSrc:
       "https://assets-us-01.kc-usercontent.com/cd358952-bd24-0080-a902-0fd831c563a1/b7979f36-dd53-4d76-9118-b727ac229215/aim2025landingbannervideo.mp4",
   },
@@ -56,6 +60,7 @@ const businessDomains = [
     description: `At Expandbiz, we help businesses set up qualified demo calls with the right prospects so your sales team can focus on showcasing the product and closing deals. You can either provide us with your own database of potential prospects, or our team will conduct thorough research to identify and build a targeted list of companies and decision-makers. We then connect you directly with the right stakeholders and arrange one-on-one meetings, ensuring your sales efforts are directed toward prospects with genuine interest and purchase potential.`,
     videoPosition: "right",
     bg: "gray-bg",
+    imgSrc: "business_services_5.jpg",
     videoSrc:
       "https://assets-us-01.kc-usercontent.com/cd358952-bd24-0080-a902-0fd831c563a1/b7979f36-dd53-4d76-9118-b727ac229215/aim2025landingbannervideo.mp4",
   },

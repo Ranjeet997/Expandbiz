@@ -1,35 +1,34 @@
-import React, { useState, useRef } from "react";
+import React, { useRef } from "react";
 
 export default function Contact_Us() {
   const formRef = useRef(null);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
-    // const formData = {
-    //   firstname: formRef.current.firstname.value,
-    //   lastname: formRef.current.lastname.value,
-    //   email: formRef.current.email.value,
-    //   phone: formRef.current.phone.value,
-    //   country: formRef.current.country.value,
-    //   business: formRef.current.business.value,
-    //   message: formRef.current.message.value,
-    // };
     const formData = new FormData(formRef.current);
-  
     try {
-      const response = await fetch("https://script.google.com/macros/s/AKfycbwUfsJVyMJpjEdJ0uBQBlEWd2uG1CQaRVx-8A0pyx1jXId0t44ScCtyp20Qp65GvyGzwg/exec", {
-        method: "POST",
-        body: formData,
-      });
-  
-      const data = await response.json();
-    alert(data.msg || "Form submitted successfully!");
+      const response = await fetch(
+        "https://script.google.com/macros/s/AKfycbzc8jASa4y8jqgFuAluc4bUGTNVCOa9C70W_UBOGqBMKXPKSqY3f9WI-k86VO92PCMB5g/exec",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
+
+      const text = await response.text(); // get raw text
+      let data;
+      try {
+        data = JSON.parse(text); // try to parse JSON
+      } catch {
+        data = { msg: text }; // fallback if server sent plain text
+      }
+
+      alert(data.msg || "Form submitted successfully!");
     } catch (error) {
       console.error("Submission error:", error);
       alert("Something went wrong. Please try again.");
     }
   };
-  
 
   return (
     <>
@@ -54,7 +53,7 @@ export default function Contact_Us() {
             style={{ position: "relative", zIndex: 2 }}
           >
             <div className="row">
-              <div className="col-md-6">
+              <div className="col-md-12 col-lg-6">
                 <p className="subheading">
                   Looking to organize an event? Get in touch with us.
                 </p>
