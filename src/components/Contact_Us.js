@@ -1,56 +1,34 @@
 import React, { useState, useRef } from "react";
 
 export default function Contact_Us() {
-  // const [formData, setFormData] = useState({
-  //   firstname: "",
-  //   lastname: "",
-  //   email: "",
-  //   phone: "",
-  //   country: "",
-  //   business: "",
-  //   message: "",
-  // });
-
-  // Handle input change
-  // const handleChange = (e) => {
-  //   setFormData({ ...formData, [e.target.name]: e.target.value });
-  // };
-
   const formRef = useRef(null);
   const handleSubmit = async (e) => {
     e.preventDefault();
+  
+    const formData = {
+      firstname: formRef.current.firstname.value,
+      lastname: formRef.current.lastname.value,
+      email: formRef.current.email.value,
+      phone: formRef.current.phone.value,
+      country: formRef.current.country.value,
+      business: formRef.current.business.value,
+      message: formRef.current.message.value,
+    };
+  
     try {
-      const response = await fetch("https://excel.cloud.microsoft/open/onedrive/?docId=7B106AF4E4B5109%21s1ce3710aed6b4a858d4cced206a91680&driveId=07B106AF4E4B5109", {
+      const response = await fetch("https://script.google.com/macros/s/AKfycbzsdpWchGSHQlZ_EojSE1A8U9F9PZrBY0jaZouI4CmuJnYcYh-7DT_9IMPqbgTm6pW1rA/exec", {
         method: "POST",
-        body: new FormData(formRef.current),
+        body: formData,
       });
+  
       const data = await response.json();
-      console.log(data);
       alert(data.msg || "Form submitted successfully!");
     } catch (error) {
       console.error("Submission error:", error);
       alert("Something went wrong. Please try again.");
     }
   };
-
-  // Handle form submit
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-
-  //   const phoneNumber = "917428776906";
-
-  //   const text = `New Contact Form Submission:
-  //   Name: ${formData.firstname} ${formData.lastname}
-  //   Email: ${formData.email}
-  //   Phone: ${formData.phone}
-  //   Country: ${formData.country}
-  //   Business Nature: ${formData.business}
-  //   Message: ${formData.message}`;
-
-  //   // Encode and open WhatsApp
-  //   const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
-  //   window.open(url, "_blank");
-  // };
+  
 
   return (
     <>
