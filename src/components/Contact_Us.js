@@ -5,24 +5,25 @@ export default function Contact_Us() {
   const handleSubmit = async (e) => {
     e.preventDefault();
   
-    const formData = {
-      firstname: formRef.current.firstname.value,
-      lastname: formRef.current.lastname.value,
-      email: formRef.current.email.value,
-      phone: formRef.current.phone.value,
-      country: formRef.current.country.value,
-      business: formRef.current.business.value,
-      message: formRef.current.message.value,
-    };
+    // const formData = {
+    //   firstname: formRef.current.firstname.value,
+    //   lastname: formRef.current.lastname.value,
+    //   email: formRef.current.email.value,
+    //   phone: formRef.current.phone.value,
+    //   country: formRef.current.country.value,
+    //   business: formRef.current.business.value,
+    //   message: formRef.current.message.value,
+    // };
+    const formData = new FormData(formRef.current);
   
     try {
-      const response = await fetch("https://script.google.com/macros/s/AKfycbzsdpWchGSHQlZ_EojSE1A8U9F9PZrBY0jaZouI4CmuJnYcYh-7DT_9IMPqbgTm6pW1rA/exec", {
+      const response = await fetch("https://script.google.com/macros/s/AKfycbwUfsJVyMJpjEdJ0uBQBlEWd2uG1CQaRVx-8A0pyx1jXId0t44ScCtyp20Qp65GvyGzwg/exec", {
         method: "POST",
         body: formData,
       });
   
       const data = await response.json();
-      alert(data.msg || "Form submitted successfully!");
+    alert(data.msg || "Form submitted successfully!");
     } catch (error) {
       console.error("Submission error:", error);
       alert("Something went wrong. Please try again.");
