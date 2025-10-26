@@ -13,7 +13,7 @@ export default function Nav() {
               alt="Strategic"
               height="35"
             />
-            <p className="mx-2 logo_text text-light m-0" style={{fontSize:'18px'}}>EXPANDBIZ</p>
+            <h1 className="mx-2 logo_text text-light m-0" style={{fontSize:'18px'}}>EXPANDBIZ</h1>
           </a>
 
           {/* Menu */}

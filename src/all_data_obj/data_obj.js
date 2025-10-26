@@ -9,7 +9,7 @@ const businessDomains = [
     drive results.`,
     videoPosition: "right",
     bg: "gray-bg",
-    imgSrc: "business_services_1.jpg",
+    imgSrc: "business_services_2.jpg",
     videoSrc:
       "https://assets-us-01.kc-usercontent.com/cd358952-bd24-0080-a902-0fd831c563a1/b7979f36-dd53-4d76-9118-b727ac229215/aim2025landingbannervideo.mp4",
   },
@@ -20,7 +20,7 @@ const businessDomains = [
     videoPosition: "left",
     bg: "white-bg",
     text: "text-dark",
-    imgSrc: "business_services_2.jpg",
+    imgSrc: "business_services_1.jpg",
     videoSrc:
       "https://assets-us-01.kc-usercontent.com/cd358952-bd24-0080-a902-0fd831c563a1/b7979f36-dd53-4d76-9118-b727ac229215/aim2025landingbannervideo.mp4",
   },
