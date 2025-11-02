@@ -1,21 +1,34 @@
 {
   "short_name": "ExpandBiz",
   "name": "ExpandBiz Global - Business Growth & Event Solutions",
-  "icons": [
-    {
-      "src": "/images/EXPANDBIZ_logo.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "/images/EXPANDBIZ_logo.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
-  ],
-  "start_url": "/",
+  "description": "ExpandBiz helps organizations grow through strategic B2B events, customized marketing, and brand engagement solutions.",
+  "start_url": "/?source=pwa",
+  "scope": "/",
   "display": "standalone",
+  "orientation": "portrait",
   "theme_color": "#000000",
   "background_color": "#ffffff",
-  "description": "At ExpandBiz, we help businesses grow through innovative B2B events, marketing, and brand engagement solutions."
+
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "16x16 32x32 48x48 64x64",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+
+  "related_applications": [],
+  "prefer_related_applications": false
 }
